@@ -256,33 +256,57 @@
     </div>
 
     <!-- Sessão de Contato -->
-    <section class="formcontato">
-        <div id="contato" class="formcontato__contacto">
-            <div class="formcontato--esquerda">
-                <img class="formcontato__img" src="assets\contact_image.png">
-            </div>
-            <div class="container">
-  <h1>Contato</h1>
-  <form target="_blank" action="https://formsubmit.co/sousabelcher@gmail.com" method="POST">
-    <div class="form-group">
-      <div class="form-row">
-        <div class="col">
-          <input type="text" name="name" class="form-control" placeholder="Seu nome" required>
-        </div>
-        <div class="col">
-          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <textarea placeholder="Sua Mensagem" class="form-control" name="message" rows="10" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar Mensagem</button>
-  </form>
-</div>
-        </div>
-    </section>
+    <section class="formcontato sections" id="contato">
+                <div class="formcontato__container">
+                    <div class="formcontato--esquerda">
+                        <img class="formcontato__img" src="./assets/imgs/contact_image.png" alt="Imagem de contato">
+                    </div>
+                    <div class="formcontato__text">
+                        <h2 class="formcontato__title secondary-title">
+                            <a href="#" title="Clique aqui para voltar ao topo da página">
+                                Contato
+                            </a>
+                        </h2>
+                        <div class="formcontato__subtext minor-title">
+                            <p>
+                                Quer entrar em contato comigo? <br>
 
+                                Preencha o formulário abaixo e entrarei em contato o mais rápido
+                                possível.
+                            </p>
+                        </div>
+
+                        <form class="formcontato__form" id="meuFormulario" action="https://formsubmit.co/sousabelcher@gmail.com" method="POST">
+                            <div class="formcontato__area">
+                                <input class="formcontato__input" type="text" placeholder=" " required="" name="nome" minlength="4" pattern="^[A-ZÀ-Úa-zà-ú]+(?: [A-ZÀ-Úa-zà-ú]+)*$">
+                                <label class="formcontato__label">Nome</label>
+                                <span class="formcontato__error"></span>
+                            </div>
+
+                            <div class="formcontato__area">
+                                <input class="formcontato__input" type="email" placeholder=" " required="" name="email" minlength="5">
+                                <label class="formcontato__label">E-mail</label>
+                                <span class="formcontato__error"></span>
+                            </div>
+
+                            <div class="formcontato__area">
+                                <input class="formcontato__input" type="text" placeholder=" " required="" name="assunto" minlength="4">
+                                <label class="formcontato__label">Assunto</label>
+                                <span class="formcontato__error"></span>
+                            </div>
+
+                            <div class="formcontato__area">
+                                <textarea class="formcontato__input formcontato__input--textarea" id="textarea" required="" name="mensagem"></textarea>
+                                <label for="textarea" class="formcontato__label--textarea">Mensagem</label><span class="formcontato__error"></span>
+                            </div>
+
+                            <button type="submit" class="formcontato__botao">
+                                Enviar mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
     <!-- Sessão de Footer/Rodapé-->
     <section class="footer">
         <div class="footer__rodape">
