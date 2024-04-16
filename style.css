@@ -146,6 +146,10 @@ section .skills__box ul {
 /*Sessão Hobbies*/
 section.hobbies {
     padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 section .hobbies__title {
