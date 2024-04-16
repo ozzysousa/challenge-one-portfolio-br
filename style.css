@@ -2,26 +2,28 @@
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
 coloque nas sessões indicadas*/
 
-:root{
+:root {
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
+    background-color: var(--cor-de-fundo);
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
     line-height: 1;
 }
-ol, ul,li {
+
+ol, ul, li {
     all: unset;
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--cor-de-link);
 }
@@ -44,8 +46,7 @@ Link da documentação oficial!
 https://en.bem.info/methodology/quick-start/*/
 
 /*Sessão Menu*/
-
-section.menu{
+section.menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -74,8 +75,7 @@ section.menu .menu__list {
 }
 
 /*Sessão Title*/
-
-section.title{
+section.title {
     margin-bottom: 30px;
     padding: 2rem 4rem;
 }
@@ -99,17 +99,16 @@ section.title .title__div .title__container .title__network {
 }
 
 /*Sessão About*/
-
-section.about{
+section.about {
     background-color: #EAF2FD;
     padding: 2rem 4rem;
 }
 
 /*Sessão Skills*/
-
 section.skills {
     padding: 2rem 4rem;
 }
+
 section #skills {
     display: flex;
     align-items: center;
@@ -128,24 +127,27 @@ section.skills .skills__line {
 
 section.skills .skills__line .skills__box {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     height: 168px;
-    width: 170px;
-    padding: 0 0 20px 20px;
+    width: 100%;
+    padding: 0 20px;
     background-color: #ffffff;
 }
 
 section .skills__box ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /*Sessão Hobbies*/
-
 section.hobbies {
     padding: 2rem 4rem;
 }
+
 section .hobbies__title {
     display: flex;
     align-items: center;
@@ -164,22 +166,24 @@ section.hobbies .hobbies__line {
 
 section.hobbies .hobbies__line .hobbies__box {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     height: 168px;
-    width: 170px;
-    padding: 0 0 20px 20px;
+    width: 100%;
+    padding: 0 20px;
     background-color: #ffffff;
 }
 
 section .hobbies__box ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Experiência Acadêmica*/
-
-section.academic{
+section.academic {
     background-color: #EAF2FD;
     padding: 2rem 4rem 8rem;
 }
@@ -218,7 +222,6 @@ section .academic__courses__list {
 }
 
 /* experiência*/
-
 section.experience {
     padding: 2rem 4rem;
 }
@@ -234,6 +237,7 @@ section .experience__section__title {
 section.experience .experience__box {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 40px;
     margin-bottom: 40px;
 }
@@ -273,15 +277,14 @@ section.experience .experiencia__botao--demo {
 }
 
 /*Contato*/
-
-section.formcontato{
+section.formcontato {
     display: flex;
     background-color: #EAF2FD;
     height: 580px;
     padding: 4rem 4rem;
 }
 
-section.formcontato .formcontato__contacto{
+section.formcontato .formcontato__contacto {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -308,7 +311,6 @@ section .formcontato__subtext h3 {
     gap: 0;
 }
 
-
 section .formcontato__text {
     display: flex;
     flex-direction: column;
@@ -325,7 +327,8 @@ section .formcontato__form {
     gap: 16px;
 }
 
-section .formcontato__input, section .formcontato__textarea {
+section .formcontato__input,
+section .formcontato__textarea {
     background-color: #ffffff;
     border-bottom: 1.5px solid #ffffff;
     width: 100%;
@@ -353,12 +356,11 @@ section .formcontato__button {
 }
 
 section .formcontato__button:hover {
-    background-color: rgba(42, 122, 228, .8);
+    background-color: rgba(42, 122, 228, 0.8);
 }
 
 /*footeer*/
-
-section.footer{
+section.footer {
     padding: 2rem 4rem;
 }
 
@@ -378,40 +380,10 @@ utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
 @media (min-width: 768px) {
-
-/* Menu */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Experiências acadêmicas*/
-
-/*Expeirência profissional*/
-
+    /* Aqui você pode adicionar estilos para tablet */
 }
 
 /*Mobile*/
 @media (min-width: 425px) {
-
-/*Menu*/
-
-/*Titulo*/
-
-/*Sessão sobre*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formação Acadêmica*/
-
-/*Experiência Profissional*/
-
- /*Contato*/
-
-/*Footer*/
-
+    /* Aqui você pode adicionar estilos para dispositivos móveis */
 }
