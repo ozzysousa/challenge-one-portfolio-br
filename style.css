@@ -1,10 +1,7 @@
-/*CSS Reset / Normalize*/
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
 
+```css
+/* CSS Reset / Normalize */
 :root {
-    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --cor-de-fundo: #F5F5F5;
     --cor-de-link: #000;
 }
@@ -32,20 +29,7 @@ input, textarea, button {
     all: unset;
 }
 
-/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
-de utiliza-la. 
-
-Mas o que é o BEM?
-
-BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
-web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
-Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
-de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
-
-Link da documentação oficial!
-https://en.bem.info/methodology/quick-start/*/
-
-/*Sessão Menu*/
+/* Sessão Menu */
 section.menu {
     display: flex;
     flex-direction: row;
@@ -74,7 +58,7 @@ section.menu .menu__list {
     gap: 20px;
 }
 
-/*Sessão Title*/
+/* Sessão Title */
 section.title {
     margin-bottom: 30px;
     padding: 2rem 4rem;
@@ -98,18 +82,18 @@ section.title .title__div .title__container .title__network {
     padding: 0;
 }
 
-/*Sessão About*/
+/* Sessão About */
 section.about {
     background-color: #EAF2FD;
     padding: 2rem 4rem;
 }
 
-/*Sessão Skills*/
+/* Sessão Skills */
 section.skills {
     padding: 2rem 4rem;
 }
 
-section #skills {
+section#skills {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,9 +103,9 @@ section #skills {
 
 section.skills .skills__line {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(176px, 1fr)); /* Define o número de colunas e sua largura mínima/máxima */
+    grid-template-columns: repeat(auto-fill, minmax(176px, 1fr));
     gap: 14px;
-    justify-items: center; /* Alinha os itens horizontalmente no centro */
+    justify-items: center;
     align-items: center;
 }
 
@@ -135,7 +119,7 @@ section.skills .skills__line .skills__box {
     background-color: #ffffff;
 }
 
-section .skills__box ul {
+section.skills .skills__box ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,7 +127,7 @@ section .skills__box ul {
     text-align: center;
 }
 
-/*Sessão Hobbies*/
+/* Sessão Hobbies */
 section.hobbies {
     padding: 2rem 4rem;
     display: flex;
@@ -152,7 +136,7 @@ section.hobbies {
     justify-content: center;
 }
 
-section .hobbies__title {
+section.hobbies .hobbies__title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,9 +146,9 @@ section .hobbies__title {
 
 section.hobbies .hobbies__line {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(176px, 1fr)); /* Define o número de colunas e sua largura mínima/máxima */
+    grid-template-columns: repeat(auto-fill, minmax(176px, 1fr));
     gap: 14px;
-    justify-items: center; /* Alinha os itens horizontalmente no centro */
+    justify-items: center;
     align-items: center;
 }
 
@@ -178,7 +162,7 @@ section.hobbies .hobbies__line .hobbies__box {
     background-color: #ffffff;
 }
 
-section .hobbies__box ul {
+section.hobbies .hobbies__box ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,7 +170,7 @@ section .hobbies__box ul {
     text-align: center;
 }
 
-/* Experiência Acadêmica*/
+/* Experiência Acadêmica */
 section.academic {
     background-color: #EAF2FD;
     padding: 2rem 4rem 8rem;
@@ -194,13 +178,13 @@ section.academic {
 
 section.academic .academic__courses {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Define o número de colunas e sua largura mínima/máxima */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 14px;
-    justify-items: center; /* Alinha os itens horizontalmente no centro */
+    justify-items: center;
     align-items: center;
 }
 
-section .academic__title {
+section.academic .academic__title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,7 +192,7 @@ section .academic__title {
     width: 100%;
 }
 
-section .academic__courses__box {
+section.academic .academic__courses__box {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -219,18 +203,18 @@ section .academic__courses__box {
     background-color: #ffffff;
 }
 
-section .academic__courses__list {
+section.academic .academic__courses__list {
     position: absolute;
     left: 0;
     bottom: -86px;
 }
 
-/* experiência*/
+/* Experiência */
 section.experience {
     padding: 2rem 4rem;
 }
 
-section .experience__section__title {
+section.experience .experience__section__title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -280,7 +264,7 @@ section.experience .experiencia__botao--demo {
     border: 1px solid #F5F5F5;
 }
 
-/*Contato*/
+/* Contato */
 section.formcontato {
     display: flex;
     background-color: #EAF2FD;
@@ -295,99 +279,4 @@ section.formcontato .formcontato__contacto {
     gap: 12px;
 }
 
-section .formcontato--esquerda {
-    height: 100%;
-    flex-grow: 1;
-}
-
-section .formcontato--esquerda .formcontato__img {
-    height: 100%;
-    width: auto;
-}
-
-section .formcontato__title {
-    margin: 0 0 16px;
-    gap: 0;
-}
-
-section .formcontato__subtext h3 {
-    margin: 0 0 8px;
-    gap: 0;
-}
-
-section .formcontato__text {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
-    flex-grow: 2;
-}
-
-section .formcontato__form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    gap: 16px;
-}
-
-section .formcontato__input,
-section .formcontato__textarea {
-    background-color: #ffffff;
-    border-bottom: 1.5px solid #ffffff;
-    width: 100%;
-    border-radius: 4px;
-}
-
-section .formcontato__input {
-    height: 55px;
-    padding: 0 8px;
-}
-
-section .formcontato__textarea {
-    padding: 14px 8px 8px;
-}
-
-section .formcontato__input:focus {
-    border-bottom: 1.5px solid #2A7AE4;
-}
-
-section .formcontato__button {
-    width: fit-content;
-    padding: 18px 16px;
-    color: #ffffff;
-    background-color: #2A7AE4;
-}
-
-section .formcontato__button:hover {
-    background-color: rgba(42, 122, 228, 0.8);
-}
-
-/*footeer*/
-section.footer {
-    padding: 2rem 4rem;
-}
-
-section .footer__rodape {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-section .footer__rodape p {
-    margin: 4px 0;
-}
-
-/* Chegou a hora de se desafiar com a responsividade, 
-utilize como referência os breakpoints @media abaixo*/
-
-/*Tablet*/
-@media (min-width: 768px) {
-    /* Aqui você pode adicionar estilos para tablet */
-}
-
-/*Mobile*/
-@media (min-width: 425px) {
-    /* Aqui você pode adicionar estilos para dispositivos móveis */
-}
+section.formcontato--es
