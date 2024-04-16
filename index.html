@@ -261,21 +261,25 @@
             <div class="formcontato--esquerda">
                 <img class="formcontato__img" src="assets\contact_image.png">
             </div>
-            <div class="formcontato__text">
-                <h2 class="formcontato__title">Contato</h2>
-                <div class="formcontato__subtext">
-                    <h3>Quer entrar em contato comigo?</h3>
-                    <h3>Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
-                </div>
-                
-                <form class="formcontato__form">
-                    <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                    <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                    <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
-                    <button class="formcontato__button">Enviar mensagem</button>
-                </form>
-            </div>
+            <div class="container">
+  <h1>Contato</h1>
+  <form target="_blank" action="https://formsubmit.co/sousabelcher@gmail.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Seu nome" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Sua Mensagem" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar Mensagem</button>
+  </form>
+</div>
         </div>
     </section>
 
