@@ -256,7 +256,7 @@
     </div>
 
     <!-- Sessão de Contato -->
-   <section class="formcontato">
+  <section class="formcontato">
     <div id="contato" class="formcontato__contacto">
         <div class="formcontato--esquerda">
             <img class="formcontato__img" src="assets\contact_image.png">
@@ -272,15 +272,15 @@
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col">
-                            <input type="text" class="formcontato__input form-control" name="name" placeholder="Nome" required>
+                            <input type="text" class="formcontato__input form-control" name="name" placeholder="Nome" required minlength="5">
                         </div>
                         <div class="col">
-                            <input type="email" class="formcontato__input form-control" name="email" placeholder="Email" required>
+                            <input type="email" class="formcontato__input form-control" name="email" placeholder="Email" required minlength="5">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <textarea class="formcontato__textarea form-control" placeholder="Sua mensagem" name="message" rows="10" required></textarea>
+                    <textarea class="formcontato__textarea form-control" placeholder="Sua mensagem" name="message" rows="10" required minlength="5"></textarea>
                 </div>
                 <button type="submit" class="formcontato__button btn btn-lg btn-dark btn-block">Enviar mensagem</button>
             </form>
